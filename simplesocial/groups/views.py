@@ -14,6 +14,7 @@ class CreateGroup(LoginRequiredMixin, generic.CreateView):
 
 class SingleGroup(generic.DeleteView):
     model = Group
+    template_name = 'groups/group_detail.html'
 
 class ListGroups(generic.ListView):
     model = Group
